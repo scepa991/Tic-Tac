@@ -6,7 +6,9 @@ import {
   TouchableOpacity,
   Alert,
   Button,
+  ImageBackground,
 } from 'react-native';
+import image from './images/brick2.jpg';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -113,9 +115,14 @@ export default class App extends React.Component {
         return (
           <Text
             style={{
-              color: 'white',
+              color: '#B8860B',
               fontSize: 90,
               textAlign: 'center',
+              shadowColor: 'red',
+              shadowOffset: {width: 2, height: 2},
+              shadowOpacity: 1,
+              shadowRadius: 8,
+              elevation: 1,
             }}>
             X
           </Text>
@@ -124,9 +131,14 @@ export default class App extends React.Component {
         return (
           <Text
             style={{
-              color: 'white',
+              color: '#B8860B',
               fontSize: 90,
               textAlign: 'center',
+              shadowColor: 'red',
+              shadowOffset: {width: 2, height: 2},
+              shadowOpacity: 1,
+              shadowRadius: 8,
+              elevation: 1,
             }}>
             O
           </Text>
@@ -211,7 +223,12 @@ const styles = StyleSheet.create({
     borderWidth: 7,
     width: 100,
     height: 100,
-    borderColor: 'white',
+    borderColor: '#4C35C0',
+    shadowColor: 'blue',
+    shadowOffset: {width: 5, height: 5},
+    shadowOpacity: 1,
+    shadowRadius: 8,
+    elevation: 1,
   },
   button: {
     padding: 50,
