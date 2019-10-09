@@ -2,6 +2,11 @@
   "name": "TicTac",
   "version": "0.0.1",
   "private": true,
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -11,7 +16,10 @@
   },
   "dependencies": {
     "react": "16.9.0",
-    "react-native": "0.61.1"
+    "react-native": "0.61.1",
+    "react-native-gesture-handler": "^1.4.1",
+    "react-navigation": "^4.0.10",
+    "react-navigation-stack": "^1.9.4"
   },
   "devDependencies": {
     "@babel/core": "7.6.2",
@@ -24,6 +32,7 @@
     "react-test-renderer": "16.9.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFiles": [ "./node_modules/react-native-gesture-handler/jestSetup.js" ]
   }
 }

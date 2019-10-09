@@ -5,13 +5,14 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* TicTacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TicTacTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		19EADCD26AE643D8A847CAA9 /* Disco3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C373CA7C58A4234AC905786 /* Disco3.ttf */; };
+		1BBB4CBB234E73B9002E15E9 /* Monoton-RXOM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCBA3F75FEE54673BD5E5CDF /* Monoton-RXOM.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -19,7 +20,11 @@
 		3E4F81B0CB45A495DB5D6301 /* libPods-TicTac-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E69834536192E8A5C03383 /* libPods-TicTac-tvOSTests.a */; };
 		521CD3B96B9EE11A68B82132 /* libPods-TicTacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 892B03D341EE1DF0645F6EB7 /* libPods-TicTacTests.a */; };
 		B4422D230AD96E0795E523D5 /* libPods-TicTac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E83686486317C748BFF504 /* libPods-TicTac.a */; };
+		D45A2C1EAE2945BEAE791D3A /* hellodenverdisplayregular_v1.6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48A94046BC5448B82F4774C /* hellodenverdisplayregular_v1.6.ttf */; };
+		D607518C888146AC9676BF72 /* HELLODENVERDISPLAYREGULAR_v1.6.otf in Resources */ = {isa = PBXBuildFile; fileRef = 87FE2F42014E4FE8AC3DC8AF /* HELLODENVERDISPLAYREGULAR_v1.6.otf */; };
+		EC6F4D9CE9304469BBAB3B9B /* hellodenverdisplaybold_v1.6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BB5F935519B44E1BE17FEBB /* hellodenverdisplaybold_v1.6.ttf */; };
 		FBC8DBD633AD596906ADD04E /* libPods-TicTac-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8657FED200D761B1566B13E /* libPods-TicTac-tvOS.a */; };
+		F4275C7D75F6420083EB38A2 /* Mansalva-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD20B3D3E3F4860A6D49768 /* Mansalva-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,19 +59,25 @@
 		2D02E47B1E0B4A5D006451C7 /* TicTac-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TicTac-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* TicTac-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TicTac-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED9D2C06CA6DD952CACCBDF /* Pods-TicTacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacTests.debug.xcconfig"; path = "Target Support Files/Pods-TicTacTests/Pods-TicTacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BB5F935519B44E1BE17FEBB /* hellodenverdisplaybold_v1.6.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = hellodenverdisplaybold_v1.6.ttf; path = ../assets/fonts/hellodenverdisplaybold_v1.6.ttf; sourceTree = "<group>"; };
 		5A5981F62C5A57EFFAEE0E27 /* Pods-TicTac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTac.release.xcconfig"; path = "Target Support Files/Pods-TicTac/Pods-TicTac.release.xcconfig"; sourceTree = "<group>"; };
 		5C083013B9C50C9D81FD9ABC /* Pods-TicTac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTac.debug.xcconfig"; path = "Target Support Files/Pods-TicTac/Pods-TicTac.debug.xcconfig"; sourceTree = "<group>"; };
 		8049E6F8CC512B54ED447457 /* Pods-TicTac-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTac-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TicTac-tvOSTests/Pods-TicTac-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		87FE2F42014E4FE8AC3DC8AF /* HELLODENVERDISPLAYREGULAR_v1.6.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = HELLODENVERDISPLAYREGULAR_v1.6.otf; path = ../assets/fonts/HELLODENVERDISPLAYREGULAR_v1.6.otf; sourceTree = "<group>"; };
 		892B03D341EE1DF0645F6EB7 /* libPods-TicTacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C373CA7C58A4234AC905786 /* Disco3.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Disco3.ttf; path = ../assets/fonts/Disco3.ttf; sourceTree = "<group>"; };
 		A333F8D5F3EBF27F593D740A /* Pods-TicTac-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTac-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TicTac-tvOS/Pods-TicTac-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B8657FED200D761B1566B13E /* libPods-TicTac-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTac-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD45DEF23D954F8F86010A15 /* Pods-TicTac-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTac-tvOS.release.xcconfig"; path = "Target Support Files/Pods-TicTac-tvOS/Pods-TicTac-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C48A94046BC5448B82F4774C /* hellodenverdisplayregular_v1.6.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = hellodenverdisplayregular_v1.6.ttf; path = ../assets/fonts/hellodenverdisplayregular_v1.6.ttf; sourceTree = "<group>"; };
+		CCBA3F75FEE54673BD5E5CDF /* Monoton-RXOM.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Monoton-RXOM.ttf"; path = "../assets/fonts/Monoton-RXOM.ttf"; sourceTree = "<group>"; };
 		D2E69834536192E8A5C03383 /* libPods-TicTac-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTac-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E83686486317C748BFF504 /* libPods-TicTac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		ED71813AFB8788C2AF5138E8 /* Pods-TicTac-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTac-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TicTac-tvOSTests/Pods-TicTac-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F08ECB7041E98B1D829403A3 /* Pods-TicTacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacTests.release.xcconfig"; path = "Target Support Files/Pods-TicTacTests/Pods-TicTacTests.release.xcconfig"; sourceTree = "<group>"; };
+		EDD20B3D3E3F4860A6D49768 /* Mansalva-Regular.ttf */ = {isa = PBXFileReference; name = "Mansalva-Regular.ttf"; path = "../assets/fonts/Mansalva-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +176,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				FFA367A5982DD066BF97730E /* Pods */,
+				C89E34B4B4A1420F8E1364F1 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -182,6 +194,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C89E34B4B4A1420F8E1364F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3BB5F935519B44E1BE17FEBB /* hellodenverdisplaybold_v1.6.ttf */,
+				87FE2F42014E4FE8AC3DC8AF /* HELLODENVERDISPLAYREGULAR_v1.6.otf */,
+				C48A94046BC5448B82F4774C /* hellodenverdisplayregular_v1.6.ttf */,
+				9C373CA7C58A4234AC905786 /* Disco3.ttf */,
+				CCBA3F75FEE54673BD5E5CDF /* Monoton-RXOM.ttf */,
+				EDD20B3D3E3F4860A6D49768 /* Mansalva-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		FFA367A5982DD066BF97730E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +219,6 @@
 				2ED9D2C06CA6DD952CACCBDF /* Pods-TicTacTests.debug.xcconfig */,
 				F08ECB7041E98B1D829403A3 /* Pods-TicTacTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -285,7 +309,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -308,6 +332,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -338,6 +363,12 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				EC6F4D9CE9304469BBAB3B9B /* hellodenverdisplaybold_v1.6.ttf in Resources */,
+				D607518C888146AC9676BF72 /* HELLODENVERDISPLAYREGULAR_v1.6.otf in Resources */,
+				1BBB4CBB234E73B9002E15E9 /* Monoton-RXOM.ttf in Resources */,
+				D45A2C1EAE2945BEAE791D3A /* hellodenverdisplayregular_v1.6.ttf in Resources */,
+				19EADCD26AE643D8A847CAA9 /* Disco3.ttf in Resources */,
+				F4275C7D75F6420083EB38A2 /* Mansalva-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
