@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   Menu: {
     position: 'absolute',
     top: '50%',
-    left: '15%',
+    
   },
   MenuText: {
     fontSize: 60,

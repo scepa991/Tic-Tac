@@ -18,7 +18,7 @@ export default class Home extends React.Component {
           </View>
           <View style={styles.Menu}>
        <TouchableOpacity onPress={() => navigate('NewGame')}><Text style={styles.MenuText}>New Game</Text></TouchableOpacity>
-       <TouchableOpacity><Text style={styles.MenuText}>Rules</Text></TouchableOpacity>
+       <TouchableOpacity onPress={() => navigate('Rules')}><Text style={styles.MenuText}>Rules</Text></TouchableOpacity>
        <TouchableOpacity ><Text style={styles.MenuText}>Exit Game</Text></TouchableOpacity>
       </View>
        </ImageBackground>
