@@ -10,7 +10,6 @@ import {
 } from 'react-native';
 import image from '../images/brick3.jpg';
 
-
 export default class NewGame extends React.Component {
   constructor(props) {
     super(props);
@@ -124,6 +123,8 @@ export default class NewGame extends React.Component {
               shadowOpacity: 1,
               shadowRadius: 8,
               elevation: 1,
+              alignItems: 'center',
+              justifyContent: 'center',
             }}>
             X
           </Text>
@@ -140,6 +141,8 @@ export default class NewGame extends React.Component {
               shadowOpacity: 1,
               shadowRadius: 8,
               elevation: 1,
+              alignItems: 'center',
+              justifyContent: 'center',
             }}>
             O
           </Text>
@@ -255,7 +258,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 50,
     color: 'blue',
-    
   },
   titleDiv: {
     position: 'absolute',

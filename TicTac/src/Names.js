@@ -2,14 +2,19 @@ import React from 'react';
 import {
   View,
   StyleSheet,
-  Text,
+  TextInput,
   ImageBackground,
+  Text,
   TouchableOpacity,
-  Image,
 } from 'react-native';
 import image from '../images/brick3.jpg';
 
-export default class Home extends React.Component {
+export default class Names extends React.Component {
+  state = {
+    player1: 'Player1',
+    player2: 'Player2',
+  };
+
   render() {
     const {navigate} = this.props.navigation;
     return (
@@ -21,15 +26,21 @@ export default class Home extends React.Component {
           <View style={styles.titleDiv}>
             <Text style={styles.title}> LOGO</Text>
           </View>
-          <View style={styles.Menu}>
-            <TouchableOpacity onPress={() => navigate('Names')}>
-              <Text style={styles.MenuText}>New Game</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => navigate('Rules')}>
-              <Text style={styles.MenuText}>Rules</Text>
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Text style={styles.MenuText}>Exit Game</Text>
+          <Text style={styles.text}>Choose player 1 name</Text>
+          <TextInput
+            style={styles.textField}
+            onChangeText={player1 => this.setState({player1})}
+            value={this.state.player1}
+          />
+          <Text style={styles.text}>Choose player 2 name</Text>
+          <TextInput
+            style={styles.textField}
+            onChangeText={player2 => this.setState({player2})}
+            value={this.state.player2}
+          />
+          <View style={styles.buttonView}>
+            <TouchableOpacity onPress={() => navigate('NewGame')}>
+              <Text style={styles.MenuText}>Start Game</Text>
             </TouchableOpacity>
           </View>
         </ImageBackground>
@@ -37,6 +48,7 @@ export default class Home extends React.Component {
     );
   }
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -50,19 +62,28 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'black',
   },
+  textField: {
+    height: '8%',
+    width: '70%',
+    borderColor: 'gray',
+    borderWidth: 1,
+    textAlign: 'center',
+    color: 'white',
+    fontSize: 25,
+  },
   title: {
     fontSize: 50,
     color: 'white',
+    marginBottom: 60,
   },
   titleDiv: {
     position: 'absolute',
     top: '10%',
     left: '10%',
   },
-  Menu: {
-    position: 'absolute',
-    top: '50%',
-    left: '15%',
+  text: {
+    fontSize: 25,
+    color: 'white',
   },
   MenuText: {
     fontSize: 60,
@@ -70,13 +91,8 @@ const styles = StyleSheet.create({
     borderStyle: 'solid',
     borderColor: 'white',
     borderWidth: 2,
-    marginBottom: 4,
   },
-  logo: {
-    width: '100%',
-    height: '100%',
-    position: 'absolute',
-    top: '10%',
-    left: '10%',
+  buttonView: {
+    marginTop: 180,
   },
 });
