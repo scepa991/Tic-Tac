@@ -39,7 +39,13 @@ export default class Names extends React.Component {
             value={this.state.player2}
           />
           <View style={styles.buttonView}>
-            <TouchableOpacity onPress={() => navigate('NewGame')}>
+            <TouchableOpacity
+              onPress={() =>
+                navigate('NewGame', {
+                  player1: this.state.player1,
+                  player2: this.state.player2,
+                })
+              }>
               <Text style={styles.MenuText}>Start Game</Text>
             </TouchableOpacity>
           </View>

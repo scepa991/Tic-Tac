@@ -8,6 +8,11 @@ import {
   Image,
 } from 'react-native';
 import image from '../images/brick3.jpg';
+import RNExitApp from 'react-native-exit-app';
+
+HandleClick = () => {
+  RNExitApp.exitApp();
+};
 
 export default class Home extends React.Component {
   render() {
@@ -28,7 +33,7 @@ export default class Home extends React.Component {
             <TouchableOpacity onPress={() => navigate('Rules')}>
               <Text style={styles.MenuText}>Rules</Text>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => HandleClick()}>
               <Text style={styles.MenuText}>Exit Game</Text>
             </TouchableOpacity>
           </View>

@@ -100,10 +100,14 @@ export default class NewGame extends React.Component {
     //Check for winners
     var winner = this.getWinner();
     if (winner == 1) {
-      Alert.alert('Player 1 is the winner');
+      Alert.alert(
+        this.props.navigation.state.params.player1 + ' is the winner',
+      );
       this.initalizeGame();
     } else if (winner == -1) {
-      Alert.alert('Player 2 is the winner');
+      Alert.alert(
+        this.props.navigation.state.params.player2 + ' is the winner',
+      );
       this.initalizeGame();
     }
   };
@@ -160,7 +164,12 @@ export default class NewGame extends React.Component {
           style={styles.ImageContainer}
           imageStyle={{opacity: 0.5}}>
           <View style={styles.titleDiv}>
-            <Text style={styles.title}>Tic - Tac</Text>
+            <Text style={styles.title}>
+              {this.props.navigation.state.params.player1}
+            </Text>
+            <Text style={styles.title}>
+              {this.props.navigation.state.params.player2}
+            </Text>
           </View>
 
           <View style={{flexDirection: 'row'}}>
