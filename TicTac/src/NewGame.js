@@ -170,73 +170,88 @@ export default class NewGame extends React.Component {
           style={styles.ImageContainer}
           imageStyle={{opacity: 0.5}}>
           <View style={styles.titleDiv}>
-            <Text style={styles.title}>
-              {this.props.navigation.state.params.player1} -
-              {this.props.navigation.state.params.player2}
-              {this.state.player1Score}
-              {this.state.player2Score}
-            </Text>
+            <View style={styles.nameBox}>
+              <Text style={styles.title}>
+                {this.props.navigation.state.params.player1}
+              </Text>
+            </View>
+            <View style={styles.nameBox1}>
+              <Text style={styles.title}>
+                {this.props.navigation.state.params.player2}
+              </Text>
+            </View>
+            <View style={styles.scoreBox}>
+              <Text style={styles.score}>{this.state.player1Score}</Text>
+            </View>
+            <View style={styles.scoreBox1}>
+              <Text style={styles.score}>{this.state.player2Score}</Text>
+            </View>
           </View>
 
-          <View style={{flexDirection: 'row'}}>
-            <TouchableOpacity
-              onPress={() => this.onTilePress(0, 0)}
-              style={[styles.tile, {borderLeftWidth: 0, borderTopWidth: 0}]}>
-              {this.renderIcon(0, 0)}
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => this.onTilePress(0, 1)}
-              style={[styles.tile, {borderTopWidth: 0}]}>
-              {this.renderIcon(0, 1)}
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => this.onTilePress(0, 2)}
-              style={[styles.tile, {borderTopWidth: 0, borderRightWidth: 0}]}>
-              {this.renderIcon(0, 2)}
-            </TouchableOpacity>
-          </View>
+          <View style={styles.game}>
+            <View style={{flexDirection: 'row'}}>
+              <TouchableOpacity
+                onPress={() => this.onTilePress(0, 0)}
+                style={[styles.tile, {borderLeftWidth: 0, borderTopWidth: 0}]}>
+                {this.renderIcon(0, 0)}
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => this.onTilePress(0, 1)}
+                style={[styles.tile, {borderTopWidth: 0}]}>
+                {this.renderIcon(0, 1)}
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => this.onTilePress(0, 2)}
+                style={[styles.tile, {borderTopWidth: 0, borderRightWidth: 0}]}>
+                {this.renderIcon(0, 2)}
+              </TouchableOpacity>
+            </View>
 
-          <View style={{flexDirection: 'row'}}>
-            <TouchableOpacity
-              onPress={() => this.onTilePress(1, 0)}
-              style={[styles.tile, {borderLeftWidth: 0}]}>
-              {this.renderIcon(1, 0)}
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => this.onTilePress(1, 1)}
-              style={[styles.tile, {}]}>
-              {this.renderIcon(1, 1)}
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => this.onTilePress(1, 2)}
-              style={[styles.tile, {borderRightWidth: 0}]}>
-              {this.renderIcon(1, 2)}
-            </TouchableOpacity>
-          </View>
+            <View style={{flexDirection: 'row'}}>
+              <TouchableOpacity
+                onPress={() => this.onTilePress(1, 0)}
+                style={[styles.tile, {borderLeftWidth: 0}]}>
+                {this.renderIcon(1, 0)}
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => this.onTilePress(1, 1)}
+                style={[styles.tile, {}]}>
+                {this.renderIcon(1, 1)}
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => this.onTilePress(1, 2)}
+                style={[styles.tile, {borderRightWidth: 0}]}>
+                {this.renderIcon(1, 2)}
+              </TouchableOpacity>
+            </View>
 
-          <View style={{flexDirection: 'row'}}>
-            <TouchableOpacity
-              onPress={() => this.onTilePress(2, 0)}
-              style={[styles.tile, {borderBottomWidth: 0, borderLeftWidth: 0}]}>
-              {this.renderIcon(2, 0)}
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => this.onTilePress(2, 1)}
-              style={[styles.tile, {borderBottomWidth: 0}]}>
-              {this.renderIcon(2, 1)}
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => this.onTilePress(2, 2)}
-              style={[
-                styles.tile,
-                {borderBottomWidth: 0, borderRightWidth: 0},
-              ]}>
-              {this.renderIcon(2, 2)}
-            </TouchableOpacity>
+            <View style={{flexDirection: 'row'}}>
+              <TouchableOpacity
+                onPress={() => this.onTilePress(2, 0)}
+                style={[
+                  styles.tile,
+                  {borderBottomWidth: 0, borderLeftWidth: 0},
+                ]}>
+                {this.renderIcon(2, 0)}
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => this.onTilePress(2, 1)}
+                style={[styles.tile, {borderBottomWidth: 0}]}>
+                {this.renderIcon(2, 1)}
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => this.onTilePress(2, 2)}
+                style={[
+                  styles.tile,
+                  {borderBottomWidth: 0, borderRightWidth: 0},
+                ]}>
+                {this.renderIcon(2, 2)}
+              </TouchableOpacity>
+            </View>
           </View>
-          <View style={styles.button}>
-            <Button title="New Game" onPress={this.onNewGamePress} />
-          </View>
+          <TouchableOpacity onPress={this.onNewGamePress} style={styles.button}>
+            <Text style={styles.buttonText}>Restart Game</Text>
+          </TouchableOpacity>
         </ImageBackground>
       </View>
     );
@@ -259,7 +274,20 @@ const styles = StyleSheet.create({
     elevation: 1,
   },
   button: {
-    padding: 50,
+    position: 'absolute',
+    top: '85%',
+    left: '17%',
+    height: 80,
+    width: 250,
+    alignItems: 'center',
+  },
+  buttonText: {
+    fontSize: 30,
+    color: 'white',
+    borderStyle: 'solid',
+    borderColor: 'white',
+    borderWidth: 2,
+    marginBottom: 4,
   },
   ImageContainer: {
     height: '100%',
@@ -270,11 +298,78 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 40,
-    color: 'blue',
+    color: 'white',
   },
   titleDiv: {
     position: 'absolute',
     top: '5%',
+    left: '10%',
+    height: 100,
+    width: 300,
+    borderWidth: 2,
+    borderStyle: 'solid',
+    borderColor: 'white',
+    alignItems: 'center',
+  },
+  score: {
+    fontSize: 40,
+    color: 'white',
+  },
+  nameBox: {
+    borderColor: 'white',
+    borderStyle: 'solid',
+    borderWidth: 2,
+    borderTopWidth: 0,
+    borderLeftWidth: 0,
+    height: 49,
+    width: 149,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    alignItems: 'center',
+  },
+  nameBox1: {
+    borderColor: 'white',
+    borderStyle: 'solid',
+    borderWidth: 2,
+    borderTopWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    height: 49,
+    width: 149,
+    position: 'absolute',
+    top: 0,
+    left: 150,
+    alignItems: 'center',
+  },
+  scoreBox: {
+    borderColor: 'white',
+    borderStyle: 'solid',
+    borderWidth: 2,
+    height: 49,
+    width: 149,
+    position: 'absolute',
+    top: 50,
+    left: 0,
+    borderTopWidth: 0,
+    borderLeftWidth: 0,
+    borderBottomWidth: 0,
+    alignItems: 'center',
+  },
+  scoreBox1: {
+    borderColor: 'white',
+    borderStyle: 'solid',
+    borderWidth: 0,
+    height: 49,
+    width: 149,
+    position: 'absolute',
+    top: 50,
+    left: 150,
+    alignItems: 'center',
+  },
+  game: {
+    position: 'absolute',
+    top: '35%',
     left: '10%',
   },
 });

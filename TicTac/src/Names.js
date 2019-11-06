@@ -31,12 +31,14 @@ export default class Names extends React.Component {
             style={styles.textField}
             onChangeText={player1 => this.setState({player1})}
             value={this.state.player1}
+            maxLength={7}
           />
           <Text style={styles.text}>Choose player 2 name</Text>
           <TextInput
             style={styles.textField}
             onChangeText={player2 => this.setState({player2})}
             value={this.state.player2}
+            maxLength={7}
           />
           <View style={styles.buttonView}>
             <TouchableOpacity
