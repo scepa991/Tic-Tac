@@ -17,6 +17,8 @@ export default class NewGame extends React.Component {
     this.state = {
       gameState: [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
       currentPlayer: 1,
+      player1Score: 0,
+      player2Score: 0,
     };
   }
   componentDidMount() {
@@ -100,11 +102,15 @@ export default class NewGame extends React.Component {
     //Check for winners
     var winner = this.getWinner();
     if (winner == 1) {
+      this.setState({player1Score: this.state.player1Score + 1});
       Alert.alert(
         this.props.navigation.state.params.player1 + ' is the winner',
       );
       this.initalizeGame();
     } else if (winner == -1) {
+      this.setState({
+        player2Score: this.state.player2Score + 1,
+      });
       Alert.alert(
         this.props.navigation.state.params.player2 + ' is the winner',
       );
@@ -165,10 +171,10 @@ export default class NewGame extends React.Component {
           imageStyle={{opacity: 0.5}}>
           <View style={styles.titleDiv}>
             <Text style={styles.title}>
-              {this.props.navigation.state.params.player1}
-            </Text>
-            <Text style={styles.title}>
+              {this.props.navigation.state.params.player1} -
               {this.props.navigation.state.params.player2}
+              {this.state.player1Score}
+              {this.state.player2Score}
             </Text>
           </View>
 
@@ -240,8 +246,6 @@ export default class NewGame extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   tile: {
     borderWidth: 7,
@@ -265,12 +269,12 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
   title: {
-    fontSize: 50,
+    fontSize: 40,
     color: 'blue',
   },
   titleDiv: {
     position: 'absolute',
-    top: '10%',
-    left: '25%',
+    top: '5%',
+    left: '10%',
   },
 });
