@@ -23,8 +23,8 @@
 		D45A2C1EAE2945BEAE791D3A /* hellodenverdisplayregular_v1.6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48A94046BC5448B82F4774C /* hellodenverdisplayregular_v1.6.ttf */; };
 		D607518C888146AC9676BF72 /* HELLODENVERDISPLAYREGULAR_v1.6.otf in Resources */ = {isa = PBXBuildFile; fileRef = 87FE2F42014E4FE8AC3DC8AF /* HELLODENVERDISPLAYREGULAR_v1.6.otf */; };
 		EC6F4D9CE9304469BBAB3B9B /* hellodenverdisplaybold_v1.6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BB5F935519B44E1BE17FEBB /* hellodenverdisplaybold_v1.6.ttf */; };
-		FBC8DBD633AD596906ADD04E /* libPods-TicTac-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8657FED200D761B1566B13E /* libPods-TicTac-tvOS.a */; };
 		F4275C7D75F6420083EB38A2 /* Mansalva-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD20B3D3E3F4860A6D49768 /* Mansalva-Regular.ttf */; };
+		FBC8DBD633AD596906ADD04E /* libPods-TicTac-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8657FED200D761B1566B13E /* libPods-TicTac-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +76,8 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		ED71813AFB8788C2AF5138E8 /* Pods-TicTac-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTac-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TicTac-tvOSTests/Pods-TicTac-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDD20B3D3E3F4860A6D49768 /* Mansalva-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Mansalva-Regular.ttf"; path = "../assets/fonts/Mansalva-Regular.ttf"; sourceTree = "<group>"; };
 		F08ECB7041E98B1D829403A3 /* Pods-TicTacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacTests.release.xcconfig"; path = "Target Support Files/Pods-TicTacTests/Pods-TicTacTests.release.xcconfig"; sourceTree = "<group>"; };
-		EDD20B3D3E3F4860A6D49768 /* Mansalva-Regular.ttf */ = {isa = PBXFileReference; name = "Mansalva-Regular.ttf"; path = "../assets/fonts/Mansalva-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +315,13 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;

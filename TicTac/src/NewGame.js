@@ -125,10 +125,10 @@ export default class NewGame extends React.Component {
         return (
           <Text
             style={{
-              color: '#B8860B',
+              color: 'black',
               fontSize: 90,
               textAlign: 'center',
-              shadowColor: 'red',
+              shadowColor: 'gray',
               shadowOffset: {width: 2, height: 2},
               shadowOpacity: 1,
               shadowRadius: 8,
@@ -143,16 +143,18 @@ export default class NewGame extends React.Component {
         return (
           <Text
             style={{
-              color: '#B8860B',
+              color: 'black',
               fontSize: 90,
               textAlign: 'center',
-              shadowColor: 'red',
+              shadowColor: 'white',
               shadowOffset: {width: 2, height: 2},
               shadowOpacity: 1,
               shadowRadius: 8,
               elevation: 1,
               alignItems: 'center',
               justifyContent: 'center',
+              marginBottom: 1,
+
             }}>
             O
           </Text>
@@ -266,12 +268,13 @@ const styles = StyleSheet.create({
     borderWidth: 7,
     width: 100,
     height: 100,
-    borderColor: '#4C35C0',
-    shadowColor: 'blue',
+    borderColor: 'white',
+    shadowColor: 'white',
     shadowOffset: {width: 5, height: 5},
-    shadowOpacity: 1,
+    shadowOpacity: 2,
     shadowRadius: 8,
     elevation: 1,
+    
   },
   button: {
     position: 'absolute',

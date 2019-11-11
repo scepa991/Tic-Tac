@@ -10,8 +10,9 @@ import {
 import image from '../images/brick3.jpg';
 import RNExitApp from 'react-native-exit-app';
 
+
 HandleClick = () => {
-  RNExitApp.exitApp();
+  RNExitApp.exitApp(0);
 };
 
 export default class Home extends React.Component {
@@ -42,6 +43,7 @@ export default class Home extends React.Component {
     );
   }
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -76,6 +78,7 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     borderWidth: 2,
     marginBottom: 4,
+    alignItems: 'center',
   },
   logo: {
     width: '100%',
