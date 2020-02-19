@@ -7,9 +7,9 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
+import image1 from '../images/newLogo.gif';
 import image from '../images/brick3.jpg';
 import RNExitApp from 'react-native-exit-app';
-
 
 HandleClick = () => {
   RNExitApp.exitApp(0);
@@ -24,9 +24,7 @@ export default class Home extends React.Component {
           source={image}
           style={styles.ImageContainer}
           imageStyle={{opacity: 0.5}}>
-          <View style={styles.titleDiv}>
-            <Text style={styles.title}> LOGO</Text>
-          </View>
+          <Image source={image1} style={styles.Logo} />
           <View style={styles.Menu}>
             <TouchableOpacity onPress={() => navigate('Names')}>
               <Text style={styles.MenuText}>New Game</Text>
@@ -80,11 +78,11 @@ const styles = StyleSheet.create({
     marginBottom: 4,
     alignItems: 'center',
   },
-  logo: {
+  Logo: {
     width: '100%',
     height: '100%',
     position: 'absolute',
-    top: '10%',
-    left: '10%',
+    top: '-23%',
+    left: '0%',
   },
 });
